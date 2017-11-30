@@ -1,0 +1,39 @@
+{
+    "container": "popover",
+    "feedbackIcons": {
+        "valid": "fa fa-check",
+        "invalid": "fa fa-times",
+        "validating": "fa fa-refresh"
+    },
+    "submitButtons": "#sb",
+    "fields": {
+        "tradeName": {
+            "validators": {
+                "notEmpty": {},
+                "regexp": {
+                    "regexp": "/^[a-zA-Z0-9\s\.]+$/"
+                }
+            }
+        },
+        "businessName": {
+            "validators": {
+                "notEmpty": {},
+                "regexp": {
+                    "regexp": "/^[a-zA-Z0-9\s\.]+$/"
+                }
+            }
+        },
+        "rfc": {
+            "validators": {
+                "notEmpty": {},
+                "stringLength": {
+                    "min": "13",
+                    "max": "14"
+                },
+                "regexp": {
+                    "regexp": "/^[a-zA-Z0-9]+$/"
+                }
+            }
+        }
+    }
+}

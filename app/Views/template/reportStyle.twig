@@ -1,0 +1,113 @@
+<style type="text/css">
+    body{
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333333;
+        background-color: #ffffff;
+    }
+    h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+        display: block;
+        -webkit-margin-before: 0.67em;
+        -webkit-margin-after: 0.67em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+    .table-striped > tbody > tr:nth-of-type(odd) {
+        background-color: #f9f9f9;
+    }
+    thead {
+        display: table-header-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+    tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+    tr {
+        display: table-row;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+    td {
+        padding: 5px;
+    }
+    .table-bordered {
+        border: 1px solid #dddddd;
+    }
+    .table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    b, strong {
+        font-weight: bold;
+    }
+    .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td{
+        border-top: 0;
+    }
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+        border: 1px solid #dddddd;
+    }
+    .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+        border-bottom-width: 2px;
+    }
+    .table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
+        padding: 5px !important;
+    }
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: middle;
+        border-top: 1px solid #dddddd;
+    }
+    table {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    #footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        color: #000;
+        font-size: 0.9em;
+    }
+    #footer {
+        bottom: 0;
+        border-top: 0.1pt solid #aaa;
+    }
+    #header table,
+    #footer table {
+        width: 100%;
+        border-collapse: collapse;
+        border: none;
+    }
+    #header td,
+    #footer td {
+        padding: 0;
+        width: 50%;
+    }
+    .page-number:before {
+        content: "{{ block('title') }} - página " counter(page);
+    }
+    hr {
+        page-break-after: always;
+        border: 0;
+    }
+    .text-center{
+        text-align: center;
+    }
+</style>

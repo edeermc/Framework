@@ -1,0 +1,69 @@
+<header class="main-header">
+    <!-- Logo -->
+    <a href="{{ route('/') }}" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><img src="{{ resource('img/logo-sm-pemex-blanco.png') }}" alt="PEMEX" width="50px"></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><img src="{{ resource('img/logo-lg-pemex-blanco.png') }}" alt="PEMEX" height="30px"></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="javascript:void(0)" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <span class="sr-only">Navigación</span>
+        </a>
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <!-- User Account: style can be found in dropdown.less -->
+                <li class="dropdown user user-menu">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="{{ resource('dist/img/avatar5.png') }}" class="user-image" alt="User Image">
+                        <span class="hidden-xs">Nombre de usuario</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- User image -->
+                        <li class="user-header">
+                            <img src="{{ resource('dist/img/avatar5.png') }}" class="img-circle" alt="User Image">
+
+                            <p>
+                                Nombre de usuario - Administrador
+                                <small><i>Ultimo login {{ "now"|date('d-m-Y') }}</i></small>
+                            </p>
+                        </li>
+                        <!-- Menu Body
+                        <li class="user-body">
+                            <div class="row">
+                                <div class="col-xs-4 text-center">
+                                    <a href="#">Followers</a>
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <a href="#">Sales</a>
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <a href="#">Friends</a>
+                                </div>
+                            </div> -->
+                            <!-- /.row
+                        </li> -->
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                            <div class="pull-left">
+                                <a href="javascript:void(0)" class="btn btn-default btn-flat">Configuración</a>
+                            </div>
+                            <div class="pull-right">
+                                <a href="javascript:void(0)" class="btn btn-default btn-flat">Cerrar sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0)"><img src="{{ resource('img/sice.png') }}" alt="SICE" width="30px"></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+</header>

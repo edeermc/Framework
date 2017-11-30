@@ -1,0 +1,33 @@
+<div class="box">
+    <div class="box-header">
+        <div class="pull-left">
+            <button class="btn btn-link" type="button" onclick="current_url.click();"><i class="fa fa-refresh"></i></button>
+        </div>
+        <div class="pull-right">
+            <button type="button" class="btn btn-primary btn-event" data-toggle="modal" data-target="#mDialog" data-mFuncion="{{ mFuncion }}" data-mModel="{{ mModel }}"
+                    data-mId="0" data-mTitle="{{ mTitle }}" data-mSize="lg">
+                <i class="fa fa-plus"></i> Agregar registro
+            </button>
+        </div>
+    </div>
+    <!-- /.box-header -->
+
+    <div class="box-body">
+        {% block catalogueBox %} {% endblock %}
+    </div>
+    <!-- /.box-body -->
+
+    <div class="box-footer text-center">
+        <button type="button" class="btn btn-success" onclick="window.open('{{ dir }}/pdf?print=1')">
+            <i class="fa fa-print"></i> Imprimir
+        </button>
+        <button type="button" class="btn btn-success" onclick="window.open('{{ dir }}/pdf')">
+            <i class="fa fa-file-pdf-o"></i> Exportar a PDF
+        </button>
+        <button type="button" class="btn btn-success" onclick="window.open('{{ dir }}/excel')">
+            <i class="fa fa-file-excel-o"></i> Exportar a Excel
+        </button>
+    </div>
+    <!-- /.box-footer -->
+</div>
+<!-- /.box -->
